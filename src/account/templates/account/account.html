@@ -1,4 +1,5 @@
 {% extends 'base.html' %}
+{% load static %}
 
 {% block content %}
 
@@ -32,9 +33,12 @@
 }
 </style>
 
+
+<img class="img-fluid mx-auto d-block" src="{% static 'a_logo.png' %}" alt="" style="width: 80px; height: 80px;">
 <div class="text-center">
 <form class="form-signin" method="post">
 {% csrf_token %}
+
 <h1 class="h3 mb-3 font-weight-normal">Account</h1>
 <label for="inputEmail" class="sr-only">Email address</label>
 <input name="email" type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus value="{{account_form.initial.email}}">

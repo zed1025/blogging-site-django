@@ -1,4 +1,5 @@
 {% extends 'base.html' %}
+{% load static %}
 
 {% block content %}
 
@@ -37,6 +38,7 @@
 }
 </style>
 
+<img class="img-fluid mx-auto d-block" src="{% static 'a_logo.png' %}" alt="" style="width: 80px; height: 80px;">
 <div class="text-center">
 <form class="form-signin" method="post">
 {% csrf_token %}
