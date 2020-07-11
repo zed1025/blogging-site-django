@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     # my-apps
     'personal',
     'account',
+    'blog',
 
     'django.contrib.admin',
     'django.contrib.auth',
