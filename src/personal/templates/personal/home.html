@@ -69,10 +69,15 @@
 				</div>
 			{% endif %}
 			<!-- End Blog posts-->
+
+			<!-- pagination -->
+			{% include 'blog/snippets/blog_post_pagination.html' with blog_posts=blog_posts %}
+
+
 		</div>
 		<!-- end blog feed -->
 
-
+		
 		<!-- Right 'create post' column  -->
 		<div class="right-column col-lg-3 d-lg-flex d-none flex-column">
 
