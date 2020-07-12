@@ -22,9 +22,11 @@
                 <p class="card-text">
                     {{blog_post.body|safe}}
                 </p>
+                <p>
                 {% if blog_post.author == request.user %}
                     <a class="btn btn-primary" href="{% url 'blog:edit' blog_post.slug %}">Update</a>
                 {% endif %}
+                </p>        
             </div>
             <div class="card-footer text-muted">
                 Updated on {{blog_post.date_updated}} by {{blog_post.author}}
